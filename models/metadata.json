@@ -1,0 +1,83 @@
+{
+  "student_id": "ug2527104@ines.ac.rw",
+  "seed": 7104,
+  "verification_code": "AI-A2-7104",
+  "dataset_sha256": "73f47f269966ba51893b7732cb9cf36d181464529af694db9b4b792cf2514924",
+  "dataset_file": "AI_A2_2527104.csv",
+  "rows_raw": 254,
+  "rows_clean": 251,
+  "train_rows": 188,
+  "test_rows": 63,
+  "features": [
+    "rainfall_mm",
+    "avg_temp_c",
+    "soil_moisture_pct",
+    "fertilizer_kg",
+    "field_size_ha",
+    "season",
+    "cooperative_support"
+  ],
+  "synthetic_data": true,
+  "regression": {
+    "selected": "linear_regression",
+    "cv_rmse_mean": 0.9706,
+    "test_mae": 0.852,
+    "test_rmse": 1.0163,
+    "test_r2": 0.8586
+  },
+  "classification": {
+    "selected": "logistic_regression",
+    "cv_f1_mean": 0.9339,
+    "test_precision": 0.9677,
+    "test_recall": 0.9677,
+    "test_f1": 0.9677,
+    "test_roc_auc": 0.998,
+    "confusion_matrix": [
+      [
+        31,
+        1
+      ],
+      [
+        1,
+        30
+      ]
+    ]
+  },
+  "clustering": {
+    "selected_k": 6,
+    "silhouette": 0.165,
+    "profiles": [
+      {
+        "cluster": 0,
+        "label": "Cluster 0: low soil moisture, high fertilizer use, high temperature",
+        "size": 33
+      },
+      {
+        "cluster": 1,
+        "label": "Cluster 1: low fertilizer use, high temperature, high field size",
+        "size": 27
+      },
+      {
+        "cluster": 2,
+        "label": "Cluster 2: high soil moisture, high fertilizer use, high temperature",
+        "size": 37
+      },
+      {
+        "cluster": 3,
+        "label": "Cluster 3: high field size, low temperature, low rainfall",
+        "size": 32
+      },
+      {
+        "cluster": 4,
+        "label": "Cluster 4: low rainfall, low fertilizer use, low field size",
+        "size": 25
+      },
+      {
+        "cluster": 5,
+        "label": "Cluster 5: high rainfall, low temperature, low field size",
+        "size": 34
+      }
+    ]
+  },
+  "disclaimer": "Classroom decision-support prototype trained on SYNTHETIC data. It does not replace an agronomist and must not be used to decide access to finance, insurance or public services. Human review is required."
+}

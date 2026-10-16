@@ -1,0 +1,24 @@
+{
+  "rows_raw": 254,
+  "duplicate_rows_found": 3,
+  "duplicate_rows_removed": 3,
+  "rows_after_cleaning": 251,
+  "missing_values_after_dedup": {
+    "soil_moisture_pct": 13,
+    "fertilizer_kg": 13
+  },
+  "missing_values_raw": {
+    "soil_moisture_pct": 15,
+    "fertilizer_kg": 14
+  },
+  "high_risk_share": 0.498,
+  "checks_passed": [
+    "schema",
+    "ranges",
+    "categories",
+    "targets_not_missing"
+  ],
+  "sha256": "73f47f269966ba51893b7732cb9cf36d181464529af694db9b4b792cf2514924",
+  "verification_code": "AI-A2-7104",
+  "seed": 7104
+}

@@ -1,0 +1,94 @@
+{
+  "verification_code": "AI-A2-7104",
+  "seed": 7104,
+  "target": "high_risk",
+  "positive_class": "high_risk = 1 (yield per hectare below median)",
+  "confusion_matrix_layout": "[[TN, FP], [FN, TP]]",
+  "models": {
+    "baseline_majority": {
+      "cv_f1_mean": 0.1309,
+      "test_precision": 0.0,
+      "test_recall": 0.0,
+      "test_f1": 0.0,
+      "test_roc_auc": 0.5,
+      "confusion_matrix": [
+        [
+          32,
+          0
+        ],
+        [
+          31,
+          0
+        ]
+      ]
+    },
+    "logistic_regression": {
+      "cv_f1_mean": 0.9339,
+      "test_precision": 0.9677,
+      "test_recall": 0.9677,
+      "test_f1": 0.9677,
+      "test_roc_auc": 0.998,
+      "confusion_matrix": [
+        [
+          31,
+          1
+        ],
+        [
+          1,
+          30
+        ]
+      ]
+    },
+    "random_forest": {
+      "cv_f1_mean": 0.8969,
+      "test_precision": 0.8824,
+      "test_recall": 0.9677,
+      "test_f1": 0.9231,
+      "test_roc_auc": 0.9859,
+      "confusion_matrix": [
+        [
+          28,
+          4
+        ],
+        [
+          1,
+          30
+        ]
+      ]
+    },
+    "gradient_boosting": {
+      "cv_f1_mean": 0.8707,
+      "test_precision": 0.9355,
+      "test_recall": 0.9355,
+      "test_f1": 0.9355,
+      "test_roc_auc": 0.9879,
+      "confusion_matrix": [
+        [
+          30,
+          2
+        ],
+        [
+          2,
+          29
+        ]
+      ]
+    }
+  },
+  "selected_model": "logistic_regression",
+  "selection_reason": "logistic_regression has the highest 5-fold cross-validated F1 on the training split (0.9339 vs 0.1309 for the majority baseline). Selection used training-only cross-validation, not the test set.",
+  "important_error": {
+    "type": "false_negative (high-risk farm predicted as not high-risk)",
+    "row_id": 174,
+    "predicted_probability_high_risk": 0.3595,
+    "features": {
+      "rainfall_mm": 694.7006,
+      "avg_temp_c": 25.6245,
+      "soil_moisture_pct": 58.2724,
+      "fertilizer_kg": 14.5464,
+      "field_size_ha": 1.5666,
+      "season": "B",
+      "cooperative_support": 1.0
+    },
+    "actual_yield_tons": 5.5249
+  }
+}

@@ -1,0 +1,168 @@
+{
+  "silhouette_by_k": {
+    "2": 0.155,
+    "3": 0.1399,
+    "4": 0.148,
+    "5": 0.1558,
+    "6": 0.165
+  },
+  "selected_k": 6,
+  "selected_silhouette": 0.165,
+  "structure_strength": "very weak",
+  "profiles": [
+    {
+      "cluster": 0,
+      "size": 33,
+      "label": "Cluster 0: low soil moisture, high fertilizer use, high temperature",
+      "feature_means": {
+        "rainfall_mm": 1023.244,
+        "avg_temp_c": 21.842,
+        "soil_moisture_pct": 29.46,
+        "fertilizer_kg": 191.712,
+        "field_size_ha": 2.202,
+        "cooperative_support": 0.333,
+        "season_A": 0.485
+      },
+      "z_scores": {
+        "rainfall_mm": 0.174,
+        "avg_temp_c": 0.588,
+        "soil_moisture_pct": -1.029,
+        "fertilizer_kg": 0.79,
+        "field_size_ha": -0.05,
+        "cooperative_support": -0.312,
+        "season_A": -0.052
+      },
+      "posthoc_mean_yield_tons": 11.719,
+      "posthoc_high_risk_share": 0.455
+    },
+    {
+      "cluster": 1,
+      "size": 27,
+      "label": "Cluster 1: low fertilizer use, high temperature, high field size",
+      "feature_means": {
+        "rainfall_mm": 1067.154,
+        "avg_temp_c": 22.947,
+        "soil_moisture_pct": 44.821,
+        "fertilizer_kg": 57.981,
+        "field_size_ha": 2.85,
+        "cooperative_support": 0.704,
+        "season_A": 0.444
+      },
+      "z_scores": {
+        "rainfall_mm": 0.368,
+        "avg_temp_c": 0.861,
+        "soil_moisture_pct": -0.141,
+        "fertilizer_kg": -1.09,
+        "field_size_ha": 0.552,
+        "cooperative_support": 0.429,
+        "season_A": -0.132
+      },
+      "posthoc_mean_yield_tons": 11.058,
+      "posthoc_high_risk_share": 0.852
+    },
+    {
+      "cluster": 2,
+      "size": 37,
+      "label": "Cluster 2: high soil moisture, high fertilizer use, high temperature",
+      "feature_means": {
+        "rainfall_mm": 944.082,
+        "avg_temp_c": 22.753,
+        "soil_moisture_pct": 64.507,
+        "fertilizer_kg": 194.278,
+        "field_size_ha": 2.226,
+        "cooperative_support": 0.432,
+        "season_A": 0.514
+      },
+      "z_scores": {
+        "rainfall_mm": -0.178,
+        "avg_temp_c": 0.813,
+        "soil_moisture_pct": 0.998,
+        "fertilizer_kg": 0.826,
+        "field_size_ha": -0.028,
+        "cooperative_support": -0.114,
+        "season_A": 0.006
+      },
+      "posthoc_mean_yield_tons": 13.593,
+      "posthoc_high_risk_share": 0.297
+    },
+    {
+      "cluster": 3,
+      "size": 32,
+      "label": "Cluster 3: high field size, low temperature, low rainfall",
+      "feature_means": {
+        "rainfall_mm": 892.745,
+        "avg_temp_c": 15.832,
+        "soil_moisture_pct": 44.506,
+        "fertilizer_kg": 147.622,
+        "field_size_ha": 3.429,
+        "cooperative_support": 0.438,
+        "season_A": 0.531
+      },
+      "z_scores": {
+        "rainfall_mm": -0.405,
+        "avg_temp_c": -0.895,
+        "soil_moisture_pct": -0.159,
+        "fertilizer_kg": 0.17,
+        "field_size_ha": 1.089,
+        "cooperative_support": -0.104,
+        "season_A": 0.041
+      },
+      "posthoc_mean_yield_tons": 13.37,
+      "posthoc_high_risk_share": 0.938
+    },
+    {
+      "cluster": 4,
+      "size": 25,
+      "label": "Cluster 4: low rainfall, low fertilizer use, low field size",
+      "feature_means": {
+        "rainfall_mm": 714.902,
+        "avg_temp_c": 16.807,
+        "soil_moisture_pct": 39.996,
+        "fertilizer_kg": 58.488,
+        "field_size_ha": 1.333,
+        "cooperative_support": 0.52,
+        "season_A": 0.56
+      },
+      "z_scores": {
+        "rainfall_mm": -1.194,
+        "avg_temp_c": -0.654,
+        "soil_moisture_pct": -0.42,
+        "fertilizer_kg": -1.083,
+        "field_size_ha": -0.857,
+        "cooperative_support": 0.061,
+        "season_A": 0.099
+      },
+      "posthoc_mean_yield_tons": 8.129,
+      "posthoc_high_risk_share": 0.4
+    },
+    {
+      "cluster": 5,
+      "size": 34,
+      "label": "Cluster 5: high rainfall, low temperature, low field size",
+      "feature_means": {
+        "rainfall_mm": 1207.735,
+        "avg_temp_c": 16.154,
+        "soil_moisture_pct": 56.75,
+        "fertilizer_kg": 117.857,
+        "field_size_ha": 1.444,
+        "cooperative_support": 0.559,
+        "season_A": 0.529
+      },
+      "z_scores": {
+        "rainfall_mm": 0.992,
+        "avg_temp_c": -0.815,
+        "soil_moisture_pct": 0.549,
+        "fertilizer_kg": -0.248,
+        "field_size_ha": -0.754,
+        "cooperative_support": 0.139,
+        "season_A": 0.038
+      },
+      "posthoc_mean_yield_tons": 12.164,
+      "posthoc_high_risk_share": 0.147
+    }
+  ],
+  "interpretation": "K=6 gave the highest silhouette (0.165). A score this low (very weak structure) means the clusters are practical groupings of similar farms rather than sharply separated natural segments. Use them to organise field visits, not as hard categories.",
+  "note": "Clustering used only the 7 input features; yield and risk are shown post-hoc.",
+  "verification_code": "AI-A2-7104",
+  "seed": 7104
+}
